@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons _ngcontent-dmm-c138="" slot="start" class="buttons-first-slot sc-ion-buttons-md-h sc-ion-buttons-md-s md hydrated"><ion-menu-button _ngcontent-dmm-c138="" class="md button in-toolbar ion-activatable ion-focusable hydrated"></ion-menu-button></ion-buttons>
+  
+    <ion-title>Convertidor </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Convertidor</ion-card-subtitle>
+      <ion-card-title>Digite un Numero</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input [(ngModel)]="num1" type="number" placeholder="Cifra"></ion-input>
+      </ion-item>
+
+      <ion-button (click) = "Calcular()" style="position:relative; left:30%;">Convertir</ion-button>
+     
+    </ion-card-content>
+
+  </ion-card>
+  
+  <ion-card>
+    <ion-label>Result:</ion-label>
+    <h3>{{Result}}</h3>
+  </ion-card>
+</ion-content>

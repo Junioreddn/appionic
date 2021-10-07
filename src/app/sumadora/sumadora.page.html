@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons _ngcontent-dmm-c138="" slot="start" class="buttons-first-slot sc-ion-buttons-md-h sc-ion-buttons-md-s md hydrated"><ion-menu-button _ngcontent-dmm-c138="" class="md button in-toolbar ion-activatable ion-focusable hydrated"></ion-menu-button></ion-buttons>
+    <ion-title>Sumadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+   
+    <ion-card-content>
+      <ion-item-divider>
+     <h2 style="color: black; font-size: large;">Digite 2 numeros que desee sumar:</h2>
+   </ion-item-divider>
+    <ion-item>
+      <ion-input [(ngModel)]="num1" type="number" placeholder="Primera Cifra"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="num2" type="number" placeholder="Segunda Cifra"></ion-input>
+    </ion-item>
+    <br>
+     <ion-button (click) = "Calcular()" style="position:relative; left:35%;">Sumar</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <h1>Resultado:</h1>
+    <h1 style="text-align:center; font-size:100px">{{Res}}</h1>
+  </ion-card>
+</ion-content>
